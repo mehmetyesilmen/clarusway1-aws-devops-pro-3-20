@@ -1,7 +1,12 @@
 package com.java.review3;
 
 import java.util.List;
+import java.util.Map;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
 
 import com.java.review2_2.AndroidPhone;
 import com.java.review2_2.SmartPhone;
@@ -24,19 +29,47 @@ public class CollectionDemo {
 //		list[2] = s8;
 
 //		List<iPhone> listPhones = new ArrayList<>();
-		List<SmartPhone> listPhones = new ArrayList<>();
+//		Set<SmartPhone> listPhones = new HashSet<>();
+		List<SmartPhone> listPhones = new LinkedList<>();
 
 //		System.out.println(listPhones.size());
 
 		listPhones.add(i5);
-		listPhones.add(i6);
+		listPhones.add(i5);
 		listPhones.add(ix);
 
-		listPhones.add(s8);
-		listPhones.add(s9);
+		listPhones.add(1, s8);
+		listPhones.add(0, s9);
 		listPhones.add(galaxy);
 
 		System.out.println(listPhones.size());
+
+		System.out.println();
+
+		System.out.println("For loop");
+		for (int i = 0; i < listPhones.size(); i++) {
+			SmartPhone phone = listPhones.get(i);
+			System.out.println(phone.getVersion());
+		}
+		System.out.println();
+
+		System.out.println("Enhanced For loop");
+		for (SmartPhone phone : listPhones) {
+			System.out.println(phone.getVersion());
+		}
+		System.out.println();
+
+		System.out.println("Iterator");
+		Iterator<SmartPhone> it = listPhones.iterator();
+		while (it.hasNext()) {
+			SmartPhone phone = it.next();
+			System.out.println(phone.getVersion());
+		}
+
+		List<Number> list = new ArrayList<>();
+		list.add(new Integer(4));
+		list.add(new Double(5.5));
+//		list.add(new String("abc"));
 
 	}
 }
