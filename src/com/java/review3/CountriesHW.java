@@ -22,14 +22,30 @@ public class CountriesHW {
 
 		Map<String, Map<String, String>> worldMap = new HashMap<>();
 		worldMap.put("Asia", asia);
-		worldMap.put("Europe", europe);
 		worldMap.put("Africa", africa);
+		worldMap.put("Europe", europe);
 
 		Set<String> keys = worldMap.keySet();
 		for (String key : keys) {
 			System.out.println(key);
 			// Code goes here
-
+			Map<String, String> continent = worldMap.get(key);
+			System.out.println(continent);
+			
+//			Set<Map.Entry<String, String>> countries = continent.entrySet();
+//			for(Map.Entry<String, String> country : countries) {
+//				System.out.println(country.getKey() + "->" + country.getValue());
+//			}
+			
+//			Set<String> countrySet = continent.keySet();
+//			for(String countryName : countrySet) {
+//				System.out.println(countryName + "->" + continent.get(countryName));
+//			}
+			
+			Collection<String> capitalCityCollection = continent.values();
+			
+			
+			System.out.println();
 		}
 
 	}
