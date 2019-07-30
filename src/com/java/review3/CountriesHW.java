@@ -43,7 +43,9 @@ public class CountriesHW {
 //			}
 			
 			Collection<String> capitalCityCollection = continent.values();
-			
+			for (String capitalCity : capitalCityCollection) {
+				System.out.println(capitalCity);
+			}
 			
 			System.out.println();
 		}
