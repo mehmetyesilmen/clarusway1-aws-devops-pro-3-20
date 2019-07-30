@@ -34,10 +34,5 @@ public class DivideByZeroDemo {
 		} catch (Exception ex) {
 			System.out.println("Something happened.");
 		}
-		
-		//Create a class with a method which creates a List of Exception
-		//call the method from main method
-		//Loop through the exception and print the message and the exception itself.
-		
 	}
 }
