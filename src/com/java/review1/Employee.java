@@ -6,7 +6,7 @@ public class Employee {
 	private String lastName;
 	private int empAge;
 
-	Employee() {
+	public Employee() {
 	}
 
 	public String getSSN() {
