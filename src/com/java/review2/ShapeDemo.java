@@ -24,19 +24,24 @@ public class ShapeDemo {
 		double totalArea = 0;
 		double totalPerimeter = 0;
 		for (Shape2D shape : shapes) {
+//			if (shape instanceof Circle) {
+//				Circle c = (Circle) shape;
+//				c.getRadius();
+//				((Circle) shape).getRadius();
+//			}
 			totalArea += shape.getArea();
 			totalPerimeter += shape.getPerimeter();
 		}
 		System.out.println("Total Area is: " + totalArea);
 		System.out.println("Total Perimeter is : " + totalPerimeter);
 
-//		Shape3D s3 = new Sphere(3);
-//		System.out.println("Sphere Area = " +  s3.getArea());
-//		System.out.println("Sphere Volume = " +  s3.getVolume());
-//		
-//		Shape3D s4 = new Cube(6);
-//		System.out.println("Cube Area = " +  s4.getArea());
-//		System.out.println("Cube Volume = " +  s4.getVolume());
+		Shape3D s3 = new Sphere(3);
+		System.out.println("Sphere Area = " + s3.getArea());
+		System.out.println("Sphere Volume = " + s3.getVolume());
+
+		Shape3D s4 = new Cube(6);
+		System.out.println("Cube Area = " + s4.getArea());
+		System.out.println("Cube Volume = " + s4.getVolume());
 
 		// Do the same list example for 3D Shapes
 	}
