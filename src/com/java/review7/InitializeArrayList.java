@@ -51,10 +51,7 @@ public class InitializeArrayList {
 		// 5. Intialize using another collection
 		List<String> list7 = new ArrayList<>(list1);
 		list1.add("z");
-		printListElement(list1);
-
 		printListElement(list7);
-
 	}
 
 	public static void printListElement(List<String> list) {
