@@ -14,4 +14,16 @@ public class Employee {
 	public String toString() {
 		return "EmpId: " + empId + " EmpName: " + empName + " Department: " + department;
 	}
+	
+	public int getEmpId() {
+		return empId;
+	}
+
+	public String getEmpName() {
+		return empName;
+	}
+
+	public String getDepartment() {
+		return department;
+	}
 }
